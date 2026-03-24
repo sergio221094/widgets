@@ -15,17 +15,19 @@ class MyContainer extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.white,
               shape: BoxShape.circle,
-              gradient: LinearGradient(
-                colors: const [Colors.yellow, Colors.blue, Colors.red],
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                stops: const [0.5, 0.75, 1],
+              gradient: RadialGradient(
+                colors: [
+                  Colors.white,
+                  Colors.blue,
+                  Colors.blue.withValues(alpha: .2),
+                ],
+                stops: [0.6, 0.95, 1],
               ),
               boxShadow: [
                 BoxShadow(
                   color: Colors.blue.withValues(alpha: .5),
                   blurRadius: 10,
-                  spreadRadius: 10,
+                  offset: Offset(-5, -3),
                 ),
               ],
             ),
