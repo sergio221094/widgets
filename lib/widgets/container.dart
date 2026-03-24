@@ -19,6 +19,7 @@ class MyContainer extends StatelessWidget {
                 colors: const [Colors.yellow, Colors.blue, Colors.red],
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
+                stops: const [0.5, 0.75, 1],
               ),
               boxShadow: [
                 BoxShadow(
