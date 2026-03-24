@@ -7,30 +7,12 @@ class MyContainer extends StatelessWidget {
       color: Colors.white,
       child: DefaultTextStyle(
         style: TextStyle(),
-        child: Center(
+        child: SizedBox(
           child: Container(
             width: 200,
             height: 200,
+            color: Colors.red,
             alignment: Alignment.center,
-            decoration: BoxDecoration(
-              color: Colors.white,
-              shape: BoxShape.circle,
-              gradient: RadialGradient(
-                colors: [
-                  Colors.white,
-                  Colors.blue,
-                  Colors.blue.withValues(alpha: .2),
-                ],
-                stops: [0.6, 0.95, 1],
-              ),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.blue.withValues(alpha: .5),
-                  blurRadius: 10,
-                  offset: Offset(-5, -3),
-                ),
-              ],
-            ),
             child: Text(
               'Sergio Velasquez',
               textDirection: TextDirection.ltr,
